@@ -1,0 +1,392 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#"
+     xml:base="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Algoritmo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Algoritmo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#RedesNeuronales"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Aplicaciones -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Aplicaciones">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#RedesNeuronales"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Aprendizaje -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Aprendizaje">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Algoritmo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Aprendizaje_Profundo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Aprendizaje_Profundo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Aplicaciones"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Aproximación_de_Funciones -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Aproximación_de_Funciones">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Aplicaciones"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Arboles_de_Decisión -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Arboles_de_Decisión">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Clasificación"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Back_Propagation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Back_Propagation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Aprendizaje"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Base_Radial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Base_Radial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Tipo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Bias -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Bias">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Estructura"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Biológica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Biológica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Patrón"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Booleano -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Booleano">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Estructura"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Capas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Capas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Estructura"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Clasificación -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Clasificación">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Algoritmo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Clasificación_Bayesiana -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Clasificación_Bayesiana">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Clasificación"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Convolucional -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Convolucional">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Tipo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Enfoque_Hibrido -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Enfoque_Hibrido">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Tipo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Entrada -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Entrada">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Estructura"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Estructura -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Estructura">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#RedesNeuronales"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Función_ReLU -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Función_ReLU">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Estructura"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Función_Sigmoide -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Función_Sigmoide">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Estructura"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Función_de_Activación -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Función_de_Activación">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Estructura"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Gradiente_Descendente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Gradiente_Descendente">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Aprendizaje"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Ingeniería_de_Control -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Ingeniería_de_Control">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Aplicaciones"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Kmeans -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Kmeans">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Clasificación"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Knn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Knn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Clasificación"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Mono_Capa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Mono_Capa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Tipo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Multi_Capa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Multi_Capa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Tipo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Neurona -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Neurona">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Estructura"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Nodo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Nodo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Estructura"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Patrón -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Patrón">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#RedesNeuronales"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Perceptrón -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Perceptrón">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Estructura"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Peso -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Peso">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Estructura"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Predicción -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Predicción">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Algoritmo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Procesamiento_de_Datos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Procesamiento_de_Datos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Aplicaciones"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Recurrente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Recurrente">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Tipo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Red -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Red"/>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#RedesNeuronales -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#RedesNeuronales">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Red"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Regresión_Lineal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Regresión_Lineal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Predicción"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Regresión_Logística -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Regresión_Logística">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Predicción"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Robótica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Robótica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Aplicaciones"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Salida -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Salida">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Estructura"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Sobreajuste -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Sobreajuste">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Aprendizaje"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Subajuste -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Subajuste">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Aprendizaje"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Supervisada -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Supervisada">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Clasificación"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Tipo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Tipo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#RedesNeuronales"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Variable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Variable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Estructura"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
