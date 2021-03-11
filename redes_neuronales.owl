@@ -13,6 +13,23 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#synonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#synonym"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -335,6 +352,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Robótica">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Aplicaciones"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">La róbotica existe como la combinación de diferentes disciplicinas como la electrónica, mecánica y robótica.</rdfs:comment>
     </owl:Class>
     
 
