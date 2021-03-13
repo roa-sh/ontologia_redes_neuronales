@@ -82,6 +82,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Arboles_de_Decisión">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Clasificación"/>
+        <rdfs:comment>Dado un conjunto de datos se fabrican diagramas de construcciones lógicas, muy similares a los sistemas de predicción basados en reglas, que sirven para representar y categorizar una serie de condiciones que ocurren de forma sucesiva, para la resolución de un problema.</rdfs:comment>
+        <rdfs:comment>Decision Tree</rdfs:comment>
     </owl:Class>
     
 
@@ -146,6 +148,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Clasificación_Bayesiana">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Clasificación"/>
+        <synonym>Naive Bayes</synonym>
+        <rdfs:comment>En términos simples, un clasificador de Naive Bayes asume que la presencia o ausencia de una característica particular no está relacionada con la presencia o ausencia de cualquier otra característica, dada la clase variable. Por ejemplo, una fruta puede ser considerada como una manzana si es roja, redonda y de alrededor de 7 cm de diámetro. Un clasificador de Naive Bayes considera que cada una de estas características contribuye de manera independiente a la probabilidad de que esta fruta sea una manzana, independientemente de la presencia o ausencia de las otras características.</rdfs:comment>
     </owl:Class>
     
 
@@ -210,6 +214,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Gradiente_Descendente">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Aprendizaje"/>
+        <rdfs:comment>El gradiente descendiente es un método de optimización numérica para estimar  los mejores coeficientes.</rdfs:comment>
+        <rdfs:comment>Grdient Descent</rdfs:comment>
     </owl:Class>
     
 
@@ -226,6 +232,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Kmeans">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Clasificación"/>
+        <synonym rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Clasificación"/>
+        <synonym>Clustering</synonym>
+        <rdfs:comment>K-medias es un método de agrupamiento, que tiene como objetivo la partición de un conjunto de n observaciones en k grupos en el que cada observación pertenece al grupo cuyo valor medio es más cercano. Es un método utilizado en minería de datos.</rdfs:comment>
     </owl:Class>
     
 
@@ -234,6 +243,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Knn">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Clasificación"/>
+        <rdfs:comment>El algoritmo calcula la distancia del elemento nuevo a cada uno de los existentes, y ordena dichas distancias de menor a mayor para ir seleccionando el grupo al que pertenecer. Este grupo será, por tanto, el de mayor frecuencia con menores distancias.</rdfs:comment>
+        <rdfs:comment>Nearest Neighbours</rdfs:comment>
     </owl:Class>
     
 
@@ -321,7 +332,10 @@
 
     <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Red -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Red"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Red">
+        <synonym>Retro propagación</synonym>
+        <rdfs:comment>Es un método de cálculo del gradiente utilizado en algoritmos de aprendizaje supervisado utilizados para entrenar redes neuronales artificiales.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -329,6 +343,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#RedesNeuronales">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Red"/>
+        <synonym>Neural network</synonym>
+        <rdfs:comment>Las redes neuronales artificiales son un modelo computacional el que fue evolucionando a partir de diversas aportaciones científicas que están registradas en la historia.​ Consiste en un conjunto de unidades, llamadas neuronas artificiales, conectadas entre sí para transmitirse señales emulando el comportamiento de una red neuronal biológica.</rdfs:comment>
     </owl:Class>
     
 
@@ -337,6 +353,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Regresión_Lineal">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Predicción"/>
+        <rdfs:comment>La regresión lineal es un campo de estudio que enfatiza la relación estadística entre dos variables continuas conocidas como variables de predicción y respuesta.</rdfs:comment>
+        <rdfs:comment>Linear Regression</rdfs:comment>
     </owl:Class>
     
 
@@ -345,6 +363,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Regresión_Logística">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Predicción"/>
+        <rdfs:comment>Es un tipo de análisis de regresión utilizado para predecir el resultado de una variable categórica en función de las variables independientes o predictoras. Es útil para modelar la probabilidad de un evento ocurriendo como función de otros factores.</rdfs:comment>
+        <rdfs:comment>Logistic regression</rdfs:comment>
     </owl:Class>
     
 
@@ -370,6 +390,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Sobreajuste">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Aprendizaje"/>
+        <synonym>Overfitting</synonym>
+        <rdfs:comment>Es el efecto de sobreentrenar un algoritmo de aprendizaje con unos ciertos datos para los que se conoce el resultado deseado.</rdfs:comment>
     </owl:Class>
     
 
@@ -378,6 +400,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Subajuste">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Aprendizaje"/>
+        <synonym>Underfitting</synonym>
+        <rdfs:comment>Es lo que ocurre cuando nuestro modelo es muy simplista, insuficiente para capturar los matices, particularidades y complejidades en los datos.</rdfs:comment>
     </owl:Class>
     
 
@@ -386,6 +410,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Supervisada">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Clasificación"/>
+        <rdfs:comment>Es una técnica para deducir una función a partir de datos de entrenamiento. Los datos de entrenamiento consisten de pares de objetos: una componente del par son los datos de entrada y el otro, los resultados deseados.</rdfs:comment>
+        <rdfs:comment>Supervised learning</rdfs:comment>
     </owl:Class>
     
 
