@@ -108,6 +108,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Bias">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Estructura"/>
+        <synonym>Sesgo</synonym>
+        <rdfs:comment>Un modelo lineal se puede implementar como una red neuronal simple: tiene una unidad de sesgo que siempre es una constante igual a 1.</rdfs:comment>
     </owl:Class>
     
 
@@ -133,6 +135,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Capas">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Estructura"/>
+        <rdfs:comment>Del mismo modo que nuestro cerebro está compuesto por neuronas interconectadas entre sí, una red neuronal artificial está formada por neuronas artificiales conectadas entre sí y agrupadas en diferentes niveles que denominamos capas</rdfs:comment>
     </owl:Class>
     
 
@@ -174,7 +177,8 @@
     <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Entrada -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Entrada">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Estructura"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Capas"/>
+        <rdfs:comment>Las neuronas de la primera capa reciben como entrada los datos reales que alimentan a la red neuronal.  Es por eso por lo que la primera capa se conoce como capa de entrada.</rdfs:comment>
     </owl:Class>
     
 
@@ -183,6 +187,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Estructura">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#RedesNeuronales"/>
+        <synonym>Esquema</synonym>
+        <rdfs:comment>Composición o partes que forman una red neuronal</rdfs:comment>
     </owl:Class>
     
 
@@ -190,7 +196,8 @@
     <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Función_ReLU -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Función_ReLU">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Estructura"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Función_de_Activación"/>
+        <rdfs:comment>La función ReLU transforma los valores introducidos anulando los valores negativos y dejando los positivos tal y como entran.</rdfs:comment>
     </owl:Class>
     
 
@@ -198,7 +205,8 @@
     <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Función_Sigmoide -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Función_Sigmoide">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Estructura"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Función_de_Activación"/>
+        <rdfs:comment>Transforma los valores introducidos a una escala (0,1), donde los valores altos tienen de manera asintótica a 1 y los valores muy bajos tienden de manera asintótica a 0.</rdfs:comment>
     </owl:Class>
     
 
@@ -207,6 +215,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Función_de_Activación">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Estructura"/>
+        <rdfs:comment>Se encarga de devolver una salida a partir de un valor de entrada, normalmente el conjunto de valores de salida en un rango determinado como (0,1) o (-1,1).</rdfs:comment>
     </owl:Class>
     
 
@@ -271,6 +280,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Neurona">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Estructura"/>
+        <synonym xml:lang="en">Neuron</synonym>
+        <rdfs:comment>Unidad minima dentro de la red neuronal que debe tener varias conexiones y en diferentes niveles o capas.</rdfs:comment>
     </owl:Class>
     
 
@@ -279,6 +290,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Nodo">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Estructura"/>
+        <synonym xml:lang="en">Node</synonym>
+        <rdfs:comment>Se utiliza para crear y entrenar una red neuronal.</rdfs:comment>
     </owl:Class>
     
 
@@ -295,6 +308,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Perceptrón">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Estructura"/>
+        <rdfs:comment>El perceptrón es la red neuronal más básica que existe de aprendizaje supervisado que data de los años 50.</rdfs:comment>
     </owl:Class>
     
 
@@ -303,6 +317,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Peso">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Estructura"/>
+        <rdfs:comment>Necesitamos asignar pesos a cada conexión neuronal, de manera que la salida de la función de activación de cada neurona se vea afectada por el paso de cada conexión.</rdfs:comment>
     </owl:Class>
     
 
@@ -382,7 +397,8 @@
     <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Salida -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Salida">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Estructura"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Capas"/>
+        <rdfs:comment>En el caso de las neuronas artificiales, la suma de las entradas multiplicadas por sus pesos asociados determina el “impulso nervioso” que recibe la neurona. Este valor, se procesa en el interior de la célula mediante una función de activación que devuelve un valor que se envía como salida de la neurona.</rdfs:comment>
     </owl:Class>
     
 
@@ -429,6 +445,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Variable">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Estructura"/>
+        <rdfs:comment xml:lang="en">Unidad utilizada para representar algun valor dentro de algun algoritmo o metodo matematico.</rdfs:comment>
     </owl:Class>
 </rdf:RDF>
 
