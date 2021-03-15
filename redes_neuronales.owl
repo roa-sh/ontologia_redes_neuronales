@@ -124,6 +124,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Booleano">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Estructura"/>
+        <rdfs:comment>Dato verdadero o falso</rdfs:comment>
     </owl:Class>
     
 
