@@ -66,6 +66,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Aprendizaje_Profundo">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Aplicaciones"/>
+        <synonym>Redes_Neuronales_Profundas</synonym>
+        <rdfs:comment>El aprendizaje profundo es un aspecto de la inteligencia artificial (AI) que se ocupa de emular el enfoque de aprendizaje que los seres humanos utilizan para obtener ciertos tipos de conocimiento.</rdfs:comment>
     </owl:Class>
     
 
@@ -74,6 +76,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Aproximación_de_Funciones">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Aplicaciones"/>
+        <synonym>Teoría_de_la_Aproximación</synonym>
+        <rdfs:comment>La aproximación de funciones se refiere a cómo las funciones pueden ser aproximadas con otras funciones más simples</rdfs:comment>
     </owl:Class>
     
 
@@ -114,6 +118,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Biológica">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Patrón"/>
+        <synonym>Anatómico</synonym>
+        <synonym>Corporal</synonym>
+        <rdfs:comment>De la biología o relacionada con ella.</rdfs:comment>
     </owl:Class>
     
 
@@ -218,6 +225,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Ingeniería_de_Control">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Aplicaciones"/>
+        <synonym>Tecnologia_de_Control</synonym>
+        <rdfs:comment>Es una rama de la ciencia que abarca las áreas de la matemática y la informática, para juntarla con el fin de diseñar, fabricar y realizar múltiples mantenimientos a las herramientas que elaboraran los procesos que el ingeniero imponga ante las configuraciones hechas.</rdfs:comment>
     </owl:Class>
     
 
@@ -307,6 +316,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Procesamiento_de_Datos">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Aplicaciones"/>
+        <synonym>Procesamiento_de_Informacion</synonym>
+        <synonym>Tratamiento_de_Datos</synonym>
+        <rdfs:comment>El procesamiento empieza con datos en su forma en bruto y los convierte a un formato más legible (gráficos, documentos, etc.), dándoles la forma y el contexto necesarios para que los ordenadores los interpreten y los empleados los utilicen en toda una organización.</rdfs:comment>
     </owl:Class>
     
 
@@ -353,7 +365,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Robótica">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Aplicaciones"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">La róbotica existe como la combinación de diferentes disciplicinas como la electrónica, mecánica y robótica.</rdfs:comment>
+        <synonym>Automatización_de_Maquinas</synonym>
+        <synonym>Cibernética</synonym>
+        <rdfs:comment>Parte de la ingeniería que se ocupa de la aplicación de la informática al diseño y uso de máquinas que sustituyan a las personas en la realización de diferentes tareas o funciones.</rdfs:comment>
     </owl:Class>
     
 
