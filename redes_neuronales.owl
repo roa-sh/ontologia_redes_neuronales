@@ -55,7 +55,7 @@
 
     <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#tipo_de -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#tipo_de">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#tipo_de"/>
     <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#se_aplica_a -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#se_aplica_a">
