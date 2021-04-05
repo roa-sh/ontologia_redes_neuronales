@@ -30,6 +30,40 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#efecto_en -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#efecto_en">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#interactua_con -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#interactua_con"/>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#tipo_de -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#tipo_de">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -42,6 +76,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Algoritmo">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#RedesNeuronales"/>
+        <synonym>recipe</synonym>
+        <rdfs:comment>Conjunto ordenado de operaciones sistemáticas que permite hacer un cálculo y hallar la solución de un tipo de problemas.</rdfs:comment>
     </owl:Class>
     
 
@@ -58,6 +94,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Aprendizaje">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Algoritmo"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#tipo_de"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Algoritmo"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <synonym>Formation</synonym>
+        <rdfs:comment>Proceso a través del cual se modifican y adquieren habilidades, destrezas, conocimientos, conductas y valores.</rdfs:comment>
     </owl:Class>
     
 
@@ -86,6 +130,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Arboles_de_Decisión">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Clasificación"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#tipo_de"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Algoritmo"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>Dado un conjunto de datos se fabrican diagramas de construcciones lógicas, muy similares a los sistemas de predicción basados en reglas, que sirven para representar y categorizar una serie de condiciones que ocurren de forma sucesiva, para la resolución de un problema.</rdfs:comment>
         <rdfs:comment>Decision Tree</rdfs:comment>
     </owl:Class>
@@ -96,6 +146,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Back_Propagation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Aprendizaje"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#tipo_de"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Algoritmo"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <synonym>Retropropagación</synonym>
+        <rdfs:comment>Método de cálculo del gradiente utilizado en algoritmos de aprendizaje supervisado utilizados para entrenar redes neuronales artificiales.</rdfs:comment>
     </owl:Class>
     
 
@@ -151,6 +209,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Clasificación">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Algoritmo"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#tipo_de"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Algoritmo"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <synonym>Categorizacion</synonym>
+        <rdfs:comment>Capacidad y actividad humana de reconocer rasgos compartidos o similitudes entre los elementos de la experiencia del mundo, organizando y clasificando la experiencia asociándolos a un grupo más abstracto, sobre la base de sus rasgos, rasgos, similitudes u otros criterios.</rdfs:comment>
     </owl:Class>
     
 
@@ -159,6 +225,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Clasificación_Bayesiana">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Clasificación"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#tipo_de"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Algoritmo"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <synonym>Naive Bayes</synonym>
         <rdfs:comment>En términos simples, un clasificador de Naive Bayes asume que la presencia o ausencia de una característica particular no está relacionada con la presencia o ausencia de cualquier otra característica, dada la clase variable. Por ejemplo, una fruta puede ser considerada como una manzana si es roja, redonda y de alrededor de 7 cm de diámetro. Un clasificador de Naive Bayes considera que cada una de estas características contribuye de manera independiente a la probabilidad de que esta fruta sea una manzana, independientemente de la presencia o ausencia de las otras características.</rdfs:comment>
     </owl:Class>
@@ -231,6 +303,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Gradiente_Descendente">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Aprendizaje"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#tipo_de"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Algoritmo"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>El gradiente descendiente es un método de optimización numérica para estimar  los mejores coeficientes.</rdfs:comment>
         <rdfs:comment>Grdient Descent</rdfs:comment>
     </owl:Class>
@@ -251,6 +329,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Kmeans">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Clasificación"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#tipo_de"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Algoritmo"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <synonym rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Clasificación"/>
         <synonym>Clustering</synonym>
         <rdfs:comment>K-medias es un método de agrupamiento, que tiene como objetivo la partición de un conjunto de n observaciones en k grupos en el que cada observación pertenece al grupo cuyo valor medio es más cercano. Es un método utilizado en minería de datos.</rdfs:comment>
@@ -262,6 +346,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Knn">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Clasificación"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#tipo_de"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Algoritmo"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>El algoritmo calcula la distancia del elemento nuevo a cada uno de los existentes, y ordena dichas distancias de menor a mayor para ir seleccionando el grupo al que pertenecer. Este grupo será, por tanto, el de mayor frecuencia con menores distancias.</rdfs:comment>
         <rdfs:comment>Nearest Neighbours</rdfs:comment>
     </owl:Class>
@@ -289,6 +379,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Neurona">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Estructura"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#interactua_con"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Perceptrón"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <synonym xml:lang="en">Neuron</synonym>
         <rdfs:comment>Unidad minima dentro de la red neuronal que debe tener varias conexiones y en diferentes niveles o capas.</rdfs:comment>
     </owl:Class>
@@ -317,6 +413,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Perceptrón">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Estructura"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#interactua_con"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Neurona"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>El perceptrón es la red neuronal más básica que existe de aprendizaje supervisado que data de los años 50.</rdfs:comment>
     </owl:Class>
     
@@ -326,6 +428,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Peso">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Estructura"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#interactua_con"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Neurona"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>Necesitamos asignar pesos a cada conexión neuronal, de manera que la salida de la función de activación de cada neurona se vea afectada por el paso de cada conexión.</rdfs:comment>
     </owl:Class>
     
@@ -335,6 +443,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Predicción">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Algoritmo"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#tipo_de"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Algoritmo"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -381,6 +495,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Regresión_Lineal">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Predicción"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#tipo_de"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Algoritmo"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>La regresión lineal es un campo de estudio que enfatiza la relación estadística entre dos variables continuas conocidas como variables de predicción y respuesta.</rdfs:comment>
         <rdfs:comment>Linear Regression</rdfs:comment>
     </owl:Class>
@@ -391,6 +511,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Regresión_Logística">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Predicción"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#tipo_de"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Algoritmo"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>Es un tipo de análisis de regresión utilizado para predecir el resultado de una variable categórica en función de las variables independientes o predictoras. Es útil para modelar la probabilidad de un evento ocurriendo como función de otros factores.</rdfs:comment>
         <rdfs:comment>Logistic regression</rdfs:comment>
     </owl:Class>
@@ -403,8 +529,8 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Aplicaciones"/>
         <synonym>Automatización_de_Maquinas</synonym>
         <synonym>Cibernética</synonym>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">La róbotica existe como la combinación de diferentes disciplicinas como la electrónica, mecánica y el desarrollo de software.</rdfs:comment> 
-   </owl:Class>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">La róbotica existe como la combinación de diferentes disciplicinas como la electrónica, mecánica y el desarrollo de software.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -421,6 +547,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Sobreajuste">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Aprendizaje"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#efecto_en"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Algoritmo"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <synonym>Overfitting</synonym>
         <rdfs:comment>Es el efecto de sobreentrenar un algoritmo de aprendizaje con unos ciertos datos para los que se conoce el resultado deseado.</rdfs:comment>
     </owl:Class>
@@ -431,6 +563,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Subajuste">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Aprendizaje"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#efecto_en"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Algoritmo"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <synonym>Underfitting</synonym>
         <rdfs:comment>Es lo que ocurre cuando nuestro modelo es muy simplista, insuficiente para capturar los matices, particularidades y complejidades en los datos.</rdfs:comment>
     </owl:Class>
@@ -441,6 +579,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Supervisada">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Clasificación"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#tipo_de"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Algoritmo"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>Es una técnica para deducir una función a partir de datos de entrenamiento. Los datos de entrenamiento consisten de pares de objetos: una componente del par son los datos de entrada y el otro, los resultados deseados.</rdfs:comment>
         <rdfs:comment>Supervised learning</rdfs:comment>
     </owl:Class>
@@ -459,6 +603,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Variable">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Estructura"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#efecto_en"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Nodo"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Unidad utilizada para representar algun valor dentro de algun algoritmo o metodo matematico.</rdfs:comment>
     </owl:Class>
 </rdf:RDF>
