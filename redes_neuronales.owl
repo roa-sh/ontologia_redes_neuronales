@@ -49,16 +49,23 @@
 
     <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#interactua_con -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#interactua_con"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#interactua_con">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#se_aplica_a -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#se_aplica_a">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#tipo_de -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#tipo_de"/>
-    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#se_aplica_a -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#se_aplica_a">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#tipo_de">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     </owl:ObjectProperty>
     
@@ -89,6 +96,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Aplicaciones">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#RedesNeuronales"/>
+        <synonym>Usos</synonym>
+        <rdfs:comment>Conjunto de usos asociados a una entidad</rdfs:comment>
     </owl:Class>
     
 
@@ -171,6 +180,13 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Base_Radial">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Tipo"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#tipo_de"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#RedesNeuronales"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Las redes de base radial calculan la salida de la función en función de la distancia a un punto denominado centro. La salida es una combinación lineal de las funciones de activación radiales utilizadas por las neuronas individuales.</rdfs:comment>
     </owl:Class>
     
 
@@ -250,14 +266,20 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Convolucional">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Tipo"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Enfoque_Hibrido -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Enfoque_Hibrido">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Tipo"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#interactua_con"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Multi_Capa"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#tipo_de"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#RedesNeuronales"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <synonym>Red Neuronal CNN</synonym>
+        <rdfs:comment>La principal diferencia de la red neuronal convolucional con el perceptrón multicapa viene en que cada neurona no se une con todas y cada una de las capas siguientes sino que solo con un subgrupo de ellas (se especializa)</rdfs:comment>
     </owl:Class>
     
 
@@ -371,6 +393,13 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Mono_Capa">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Tipo"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#tipo_de"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#RedesNeuronales"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <synonym>Perceptrón Simple</synonym>
         <rdfs:comment>La red neuronal monocapa se corresponde con la red neuronal más simple, está compuesta por una capa de neuronas que proyectan las entradas a una capa de neuronas de salida donde se realizan los diferentes cálculos.</rdfs:comment>
     </owl:Class>
     
@@ -380,6 +409,20 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Multi_Capa">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Tipo"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#interactua_con"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Convolucional"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#tipo_de"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#RedesNeuronales"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <synonym>Perceptrón Multicapa</synonym>
+        <rdfs:comment>La red neuronal multicapa es una generalización de la red neuronal monocapa, la diferencia reside en que mientras la red neuronal monocapa está compuesta por una capa de neuronas de entrada y una capa de neuronas de salida, esta dispone de un conjunto de capas intermedias (capas ocultas) entre la capa de entrada y la de salida.</rdfs:comment>
     </owl:Class>
     
 
@@ -477,6 +520,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Recurrente">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Tipo"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#tipo_de"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#RedesNeuronales"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <synonym>Red Neuronal RNN</synonym>
+        <rdfs:comment>Las redes neuronales recurrentes no tienen una estructura de capas, sino que permiten conexiones arbitrarias entre las neuronas, incluso pudiendo crear ciclos, con esto se consigue crear la temporalidad, permitiendo que la red tenga memoria.</rdfs:comment>
     </owl:Class>
     
 
@@ -604,6 +655,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Tipo">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#RedesNeuronales"/>
+        <rdfs:comment>Modelo ideal que reúne los caracteres esenciales de todos los seres de igual naturaleza.</rdfs:comment>
     </owl:Class>
     
 
