@@ -138,6 +138,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Aproximación_de_Funciones">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Aplicaciones"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#se_aplica_a"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#RedesNeuronales"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <synonym>Teoría_de_la_Aproximación</synonym>
         <rdfs:comment>La aproximación de funciones se refiere a cómo las funciones pueden ser aproximadas con otras funciones más simples</rdfs:comment>
     </owl:Class>
@@ -195,6 +201,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Bias">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Estructura"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#efecto_en"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Algoritmo"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <synonym>Sesgo</synonym>
         <rdfs:comment>Un modelo lineal se puede implementar como una red neuronal simple: tiene una unidad de sesgo que siempre es una constante igual a 1.</rdfs:comment>
     </owl:Class>
@@ -216,6 +228,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Booleano">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Estructura"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#tipo_de"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Variable"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</synonym>
+        <synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</synonym>
         <rdfs:comment>Dato verdadero o falso</rdfs:comment>
     </owl:Class>
     
@@ -225,6 +245,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Capas">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Estructura"/>
+        <synonym>layer</synonym>
         <rdfs:comment>Del mismo modo que nuestro cerebro está compuesto por neuronas interconectadas entre sí, una red neuronal artificial está formada por neuronas artificiales conectadas entre sí y agrupadas en diferentes niveles que denominamos capas</rdfs:comment>
     </owl:Class>
     
@@ -288,6 +309,13 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Entrada">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Capas"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#interactua_con"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Neurona"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <synonym>Input</synonym>
         <rdfs:comment>Las neuronas de la primera capa reciben como entrada los datos reales que alimentan a la red neuronal.  Es por eso por lo que la primera capa se conoce como capa de entrada.</rdfs:comment>
     </owl:Class>
     
@@ -307,6 +335,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Función_ReLU">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Función_de_Activación"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#se_aplica_a"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Neurona"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>La función ReLU transforma los valores introducidos anulando los valores negativos y dejando los positivos tal y como entran.</rdfs:comment>
     </owl:Class>
     
@@ -316,6 +350,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Función_Sigmoide">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Función_de_Activación"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#se_aplica_a"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Neurona"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>Transforma los valores introducidos a una escala (0,1), donde los valores altos tienen de manera asintótica a 1 y los valores muy bajos tienden de manera asintótica a 0.</rdfs:comment>
     </owl:Class>
     
@@ -325,6 +365,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Función_de_Activación">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Estructura"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#se_aplica_a"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Neurona"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>Se encarga de devolver una salida a partir de un valor de entrada, normalmente el conjunto de valores de salida en un rango determinado como (0,1) o (-1,1).</rdfs:comment>
     </owl:Class>
     
@@ -350,6 +396,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Ingeniería_de_Control">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Aplicaciones"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#se_aplica_a"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#RedesNeuronales"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <synonym>Tecnologia_de_Control</synonym>
         <rdfs:comment>Es una rama de la ciencia que abarca las áreas de la matemática y la informática, para juntarla con el fin de diseñar, fabricar y realizar múltiples mantenimientos a las herramientas que elaboraran los procesos que el ingeniero imponga ante las configuraciones hechas.</rdfs:comment>
     </owl:Class>
@@ -447,6 +499,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Nodo">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Estructura"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#interactua_con"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Peso"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <synonym xml:lang="en">Node</synonym>
         <rdfs:comment>Se utiliza para crear y entrenar una red neuronal.</rdfs:comment>
     </owl:Class>
@@ -471,6 +529,7 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Neurona"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <synonym>Perceptron</synonym>
         <rdfs:comment>El perceptrón es la red neuronal más básica que existe de aprendizaje supervisado que data de los años 50.</rdfs:comment>
     </owl:Class>
     
@@ -486,6 +545,7 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Neurona"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <synonym>Weight</synonym>
         <rdfs:comment>Necesitamos asignar pesos a cada conexión neuronal, de manera que la salida de la función de activación de cada neurona se vea afectada por el paso de cada conexión.</rdfs:comment>
     </owl:Class>
     
@@ -509,6 +569,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Procesamiento_de_Datos">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Aplicaciones"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#se_aplica_a"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#RedesNeuronales"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <synonym>Procesamiento_de_Informacion</synonym>
         <synonym>Tratamiento_de_Datos</synonym>
         <rdfs:comment>El procesamiento empieza con datos en su forma en bruto y los convierte a un formato más legible (gráficos, documentos, etc.), dándoles la forma y el contexto necesarios para que los ordenadores los interpreten y los empleados los utilicen en toda una organización.</rdfs:comment>
@@ -587,6 +653,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Robótica">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Aplicaciones"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#se_aplica_a"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#RedesNeuronales"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <synonym>Automatización_de_Maquinas</synonym>
         <synonym>Cibernética</synonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">La róbotica existe como la combinación de diferentes disciplicinas como la electrónica, mecánica y el desarrollo de software.</rdfs:comment>
@@ -598,6 +670,13 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Salida">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Capas"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#interactua_con"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Neurona"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <synonym>output</synonym>
         <rdfs:comment>En el caso de las neuronas artificiales, la suma de las entradas multiplicadas por sus pesos asociados determina el “impulso nervioso” que recibe la neurona. Este valor, se procesa en el interior de la célula mediante una función de activación que devuelve un valor que se envía como salida de la neurona.</rdfs:comment>
     </owl:Class>
     
@@ -670,6 +749,7 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/roa/ontologies/2021/2/untitled-ontology-6#Nodo"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <synonym>var</synonym>
         <rdfs:comment xml:lang="en">Unidad utilizada para representar algun valor dentro de algun algoritmo o metodo matematico.</rdfs:comment>
     </owl:Class>
 </rdf:RDF>
